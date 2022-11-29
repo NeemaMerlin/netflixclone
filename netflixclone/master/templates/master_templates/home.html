@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="{% static 'styles/netflixstyle.css' %}">
+</head>
+<body>
+    
+    <div id="nav" class="container">
+        <div id="div1">
+            <img id="img1" src="{% static 'images/IMG1.jpg' %}" alt="">
+        </div>
+        <div id="space"></div>
+        <div id="div2">
+            <a id="home" href="{% url 'master:master_home' %}">Home</a>
+            <a id="about" href="{% url 'master:master_about' %}">About Us</a>
+            <a id="port" href="{% url 'master:master_portfolio' %}">Portfolio</a>
+            <a id="blog" href="{% url 'master:master_blog' %}">Blogs</a>
+            <a id="contact" href="{% url 'master:master_contact' %}">Contact Us</a>
+        </div>
+    </div>
+    
+</body>
+</html>
